@@ -4,7 +4,7 @@ class Note {
       this.text = x;
   }
 
-  shownote(){
+  showfullnote(){
     return this.text;
   }
 
