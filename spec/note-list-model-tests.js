@@ -32,8 +32,7 @@
   function returnAllNotes() {
     var noteList = new NoteList;
     noteList.addNote("Hola Mundo!!!");
-    
-    
+
     assert.isTrue(noteList.viewNotes() === "Hola Mundo!!!");
     console.log("Test for viewing note passed")
   }

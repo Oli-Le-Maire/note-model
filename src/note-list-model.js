@@ -8,14 +8,12 @@ class NoteList {
   }
 
   viewNotes() {
-    this.listOfNotes.forEach
-   this.listOfNotes;
-
+    this.listOfNotes
   }
 
 }
 
-
+// list.each { |element| puts element }
 
 
 
