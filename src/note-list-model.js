@@ -6,7 +6,13 @@ class NoteList {
   addNote(text) {
     this.listOfNotes.push(text);
   }
+
+  viewNotes() {
+    return this.listOfNotes;
+  }
+
 }
+
 
 
 

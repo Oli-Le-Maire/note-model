@@ -27,3 +27,17 @@
   canAddNotes();
 })(this);
 
+(function(){
+  function returnAllNotes() {
+    var noteList = new NoteList;
+
+    noteList.addNote("Hola Mundo!!!");
+
+    if(noteList.viewNotes() === "Hola Mundo!!!") {
+      return console.log("Test passed: Function returns the correct string");
+    } else {
+      return "Test failed: expected function to return correct string";
+    }
+  };
+  returnAllNotes();
+})(this);
