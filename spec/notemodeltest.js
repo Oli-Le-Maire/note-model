@@ -3,7 +3,7 @@
     note = new Note('JavaScript is my favourite language');
 
     if(note.showfullnote() === 'JavaScript is my favourite language') {
-      return console.log('test passed');
+      return console.log('first test for showing note passed');
   } else {
       return 'test failed';
   }

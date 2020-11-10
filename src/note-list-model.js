@@ -8,10 +8,13 @@ class NoteList {
   }
 
   viewNotes() {
-    return this.listOfNotes;
+    this.listOfNotes.forEach
+   this.listOfNotes;
+
   }
 
 }
+
 
 
 

@@ -1,43 +1,42 @@
 'use strict';
 
-(function(){
+(function(exports){
+  var noteList = new NoteList();
+  var note = {
+    content: 'test string',
+    getContent: () => { return this.content }
+  };
+  
+
+
   function hasEmptyArray() {
     var noteList = new NoteList;
-
-    if(noteList.listOfNotes.length === 0) {
-      return console.log('Test for array length');
-    } else {
-      return 'Test for array failed';
-    }
+ 
+    assert.isTrue(noteList.listOfNotes.length === 0);
+    console.log("Test for empty array")
   };
-  hasEmptyArray();
-})(this);
+    hasEmptyArray();
 
-(function() {
+
   function canAddNotes() {
     var noteList = new NoteList;
     noteList.addNote("Hello world");
 
-    if(noteList.listOfNotes.length === 1) {
-      return console.log("Test passed: Array length is equal to one");
-    } else {
-      return "Test failed: expected array length to equal to one";
-    }
-  };
+    assert.isTrue(noteList.listOfNotes.length === 1);
+    console.log("Test for adding note passed")
+  };  
   canAddNotes();
-})(this);
+  
 
-(function(){
+
   function returnAllNotes() {
     var noteList = new NoteList;
-
     noteList.addNote("Hola Mundo!!!");
+    
+    
+    assert.isTrue(noteList.viewNotes() === "Hola Mundo!!!");
+    console.log("Test for viewing note passed")
+  }
 
-    if(noteList.viewNotes() === "Hola Mundo!!!") {
-      return console.log("Test passed: Function returns the correct string");
-    } else {
-      return "Test failed: expected function to return correct string";
-    }
-  };
   returnAllNotes();
 })(this);
