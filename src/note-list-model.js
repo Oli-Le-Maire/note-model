@@ -4,11 +4,12 @@ class NoteList {
   }
 
   addNote(text) {
-    this.listOfNotes.push(text);
+    let note = new Note(text);
+    this.listOfNotes.push(note);
   }
 
   viewNotes() {
-    this.listOfNotes
+    return this.listOfNotes;
   }
 
 }

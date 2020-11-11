@@ -1,10 +1,10 @@
 
 class Note {
-  constructor(x) {
-      this.text = x;
+  constructor(text) {
+      this.text = text;
   }
 
-  showfullnote(){
+  showFullNote(){
     return this.text;
   }
 
