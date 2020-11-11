@@ -7,8 +7,6 @@
     getContent: () => { return this.content }
   };
   
-
-
   function hasEmptyArray() {
     var noteList = new NoteList;
  
