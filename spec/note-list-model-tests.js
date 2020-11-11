@@ -19,7 +19,7 @@
 
 
   function canAddNotes() {
-    var noteList = new NoteList;
+    let noteList = new NoteList;
     noteList.addNote("Hello world");
 
     assert.isTrue(noteList.listOfNotes.length === 1);
@@ -30,10 +30,10 @@
 
 
   function returnAllNotes() {
-    var noteList = new NoteList;
+    var noteList = new NoteList();
     noteList.addNote("Hola Mundo!!!");
 
-    assert.isTrue(noteList.viewNotes() === "Hola Mundo!!!");
+    assert.isTrue(noteList.viewNotes()[0].text === "Hola Mundo!!!");
     console.log("Test for viewing note passed")
   }
 
