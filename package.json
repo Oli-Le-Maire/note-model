@@ -1,0 +1,23 @@
+{
+  "name": "note_model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testinglibrary.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/http-server/bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oli-Le-Maire/note-model.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oli-Le-Maire/note-model/issues"
+  },
+  "homepage": "https://github.com/Oli-Le-Maire/note-model#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
